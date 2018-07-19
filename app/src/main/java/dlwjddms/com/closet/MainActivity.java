@@ -1,15 +1,14 @@
-﻿
 package dlwjddms.com.closet;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,15 +28,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });  // button1 대해
 
-        Button button2=(Button)findViewById(R.id.button2);
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), button_2.class);
-                startActivity(intent);
-            }
-        });  //button2 대해
 
 
         Button button3=(Button)findViewById(R.id.button3);
